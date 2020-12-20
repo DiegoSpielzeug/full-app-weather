@@ -1,0 +1,116 @@
+.aside{
+    position: absolute;
+    width: 350px;
+    height: 750px;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 1s ease;
+    left: 0;
+    top: 0;
+}
+.aside.active{
+    /* display: none; */
+    left: -100%;
+}
+.aside_button{
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-around;
+    align-items: center;
+}
+.aside_button > .MuiSvgIcon-root{
+    background-color: #6E707A;
+    padding: 5px;
+    border-radius: 50px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.aside_button > .MuiSvgIcon-root:hover{
+    background-color: #61636d;
+}
+.aside_button > .MuiSvgIcon-root:hover{
+    background-color: #61636d;
+}
+.aside_search{
+    width: 156px;
+    height: 33px;
+    background-color: #6E707A;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.aside_search:hover{
+    background-color: #61636d;
+}
+
+.aside_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.aside_weather_Principal{
+    position: relative;
+    width: 100%;
+    height: 245px;
+    background-image: url(../img/Cloud-background.png);
+    background-size: 128%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: .1;
+}
+ .aside_info img{
+    position: absolute;
+    object-fit: fill;
+    width: 170px;
+    height: 170px;
+    top: 130px;
+}
+.aside_grade{
+    margin-top: 10px;
+    font-size: 5rem;
+    color: #E7E7EB;
+    font-weight: 600;
+}
+.aside_grade span{
+    font-size: 22px;
+    color: #A09FB1;
+}
+.aside_weather{
+    margin-top: 25px;
+    font-size: 2rem;
+    color: #A09FB1;
+    text-align: center;
+}
+.aside_date{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: #A09FB1;
+    font-size: 1.5rem;
+}
+.aside_date > p{
+    padding: 0 3px 0 5px;
+}
+.aside_location{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.aside_location > .MuiSvgIcon-root{
+    color: #88869D;
+    font-size: 1.5rem;
+}
+.aside_location > p{
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: #A09FB1;
+}

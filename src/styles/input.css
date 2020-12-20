@@ -1,0 +1,76 @@
+.input_component{
+    width: 350px;
+    height: 750px;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+.input_component.active{
+    /* display: none; */
+    left: -100%;
+}
+.input_header{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+.input_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E7E7EB;
+    height: 35px;
+}
+.input_search.active{
+    border: 1px solid red;
+}
+.input_search > .MuiSvgIcon-root{
+    margin-left: 10px;
+    color: #E7E7EB;
+}
+.input_search input{
+    padding-left: 5px;
+    background-color: transparent;
+    color: #E7E7EB;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.input_btn_search{
+    padding: 9px 13px;
+    background-color: #3C47E9;
+    color: honeydew;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.input_btn_search:hover{    
+    background-color: #3842d1;
+}
+.input_citys_default{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.input_citys_default .city{
+    height: 45px;
+    color: #E7E7EB;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    width: 70%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+.input_citys_default .city:hover{
+    border: 1px solid #E7E7EB;
+}

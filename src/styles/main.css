@@ -1,0 +1,120 @@
+.main{
+    height: 750px;
+    width: 910px;
+    background-color: #100E1D;
+    position: absolute;
+    left: 350px;
+}
+.main_c_f{
+    margin-top: 33px;
+    color: honeydew;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 82px;
+}
+.main_c_f > p {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+}
+.main_celsius{
+    background-color:  #E7E7EB;
+    color: black;
+    cursor: pointer;
+}
+.main_celsius.active{
+    background-color: #585676;
+    color: #E7E7EB;
+    cursor: pointer;
+}
+.main_fahrenheit{
+    background-color: #585676;
+    color: #E7E7EB;
+    cursor: pointer;
+}
+.main_fahrenheit.active{
+    background-color:  #E7E7EB;
+    color: black;
+    cursor: pointer;
+}
+/* // */
+.main_subtitle{
+    font-size: 1.5rem;
+    color: #E7E7EB;
+    display: block;
+    margin-top: 50px;
+    margin-left: 112px;
+}
+/* // */
+.main_info_first{
+    display: flex;
+    margin-left: 112px;
+    margin-top: 20px;
+}
+.main_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 339px;
+    height: 150px;
+    background-color: #1E213A;
+}
+.main_info:last-child{
+    margin-left: 43px;
+}
+.main_info_first_subtitle{
+    color: #E7E7EB;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.main_info > div{
+    margin-top: 20px;
+}
+.main_wind_mph{
+    font-size: 3rem;
+    color: #E7E7EB;
+    font-weight: bold;
+}
+.main_wind_mph span{
+    font-size: 2rem;
+}
+.main_wind_direction{
+    display: flex;
+    color: #E7E7EB;
+    justify-content: center;
+    align-items: center;
+}
+.main_progresBar{
+    width: 180px;
+}
+.main_progresBar_num{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 12px;
+}
+.main_progresBar_num > p{
+    color: #A09FB1;
+    font-weight: bold;
+
+}
+/* #main_progressbar {
+    background-color: #E7E7EB;
+    border-radius: 4px;
+
+    padding: 1px;
+}
+#main_progressbar>div {
+    background-color: #FFEC65;
+    width: 100px;
+
+    height: 7px;
+    border-radius: 4px;
+} */
