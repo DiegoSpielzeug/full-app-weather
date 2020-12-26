@@ -26,7 +26,7 @@ function App() {
   //consultar API
   useEffect( () => {
     // evitamos que se cargue la api cuando el usuario no agrega la ciudad
-    if(Object.keys(saveCity).length === 0) return;
+    if(Object.keys(saveCity).length > 3) return;
       // if(consultarApi){
       const obtenerBusqueda = async () => {
           const {city} = saveCity;
@@ -37,8 +37,12 @@ function App() {
           let respuesta2 = await fetch(urlDay);
           let dataWeek = await respuesta.json();
           let dataDay = await respuesta2.json();
-          setDataApiWeek(dataWeek);
-          setDataApiDay(dataDay);
+          if(dataWeek.cod === "404"){
+            return;
+          } else {
+            setDataApiWeek(dataWeek);
+            setDataApiDay(dataDay);
+          }
         }
         obtenerBusqueda();
       // }   

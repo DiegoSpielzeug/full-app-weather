@@ -19,7 +19,7 @@ const Input = ({showInput,handleClick, setConsultarApi,setSaveCity}) => {
     const handleSubmit = e => {
         e.preventDefault();
         //validacion
-        if(search.city.trim() === ''){
+        if(city.trim() === '' || city.length < 4){
             setError(true);
             return;
         } else {
@@ -56,10 +56,12 @@ const Input = ({showInput,handleClick, setConsultarApi,setSaveCity}) => {
             </form>
             <div className="input_citys_default">
                 <p className="city"
-                   >London</p>
+                    onClick={() => setSearch({city: 'london'})}>London</p>
                 <p className="city"
+                    onClick={() => setSearch({city: 'colima'})}
                     >Colima</p>
                 <p className="city"
+                    onClick={() => setSearch({city: 'berlin'})}
                     >Berlin</p>
             </div>
         </div>

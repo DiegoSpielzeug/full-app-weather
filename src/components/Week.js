@@ -4,7 +4,11 @@ import '../styles/week.css';
 import icons from './img';
 
 const week = ({dataApiWeek,celciusOrFarenheit,setCelciusOrFarenheit}) => {
+  
+  if(dataApiWeek.cod === "404") return null;
+  
   const{list} = dataApiWeek;
+
    function makeDate(days){
         let unix_timestamp = days
         // multiplied by 1000 so that the argument is in milliseconds, not seconds.

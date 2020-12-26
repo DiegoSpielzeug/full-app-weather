@@ -12,3 +12,35 @@
     height: 750px;
     font-family: 'Raleway', sans-serif;
 }
+/*responsive*/
+@media (max-width: 968px) {
+    .weather {
+      flex-direction: column;
+      width: auto;
+      height: auto;
+    }
+    .aside{
+        position: inherit!important;
+    }
+    .main{
+        position: inherit!important;
+        height: auto!important;
+        width: auto!important; 
+        background-color: #100E1D;
+        padding-bottom: 23px!important;
+    }
+    .week{
+        display: grid!important;
+        grid-template-columns: auto auto!important;
+    }
+    .main_info_first{
+        flex-direction: column!important;
+        margin: 12px auto!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .main_info{
+        margin-left: 0px!important;
+    margin-top: 15px!important;
+    }
+  }
